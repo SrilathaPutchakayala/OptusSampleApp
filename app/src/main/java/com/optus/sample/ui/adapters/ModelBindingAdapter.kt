@@ -12,7 +12,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 
-open class ModelBindingAdapter<T : Any, V : ViewDataBinding>(
+class ModelBindingAdapter<T : Any, V : ViewDataBinding>(
         private var items: MutableList<T>,
         private val layoutId: Int,
         private val bindData: (V, T) -> Unit
